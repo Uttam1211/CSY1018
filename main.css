@@ -18,34 +18,102 @@ body.home{
     background-repeat: no-repeat;
     color: var(--text-darkMode-color) ;
     
-    /* display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:"header"
+                        "nav"
+                        "section""article"
+                        "footer""footer";
 }
 
 
     
     
 
-
-}
 
     
 .home header{
  grid-area: header;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ padding: 1em;
+ box-shadow: 1px 1px 7px grey;
+
 }
 .home footer{
     grid-area: footer;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    
 }
 .home nav{
     grid-area: nav;
+    padding: 1em;
+    box-shadow: 1px 1px 7px grey;
+
 }
-.home section{
+ .profileName {
     grid-area: section;
+    padding: 1em;
+    font-size: x-large;
+
 }
 .home article{
     grid-area: article;
-}
-    
+    padding: 1em;
+    border:1px solid indianred;
+    max-width: 859px;
+    width:90%;
+    height: auto;
+    margin: 1.5em;
+    border-radius: 2em;
+    box-shadow: 10px 10px 90px grey ;
+    font-size: large;
 
-   
+
+}
+ article:hover{
+    box-shadow: 8px 7px 10px grey ;
+}
+.navlist{
+        display: flex;
+justify-content: space-around;
+list-style: none;
+border:5px solid rgb(29, 167, 91);
+border-top:0px ;
+border-bottom: 0px;
+padding: 0.5em;
+text-decoration: none;
+
+    }
+    .lists a{
+        text-decoration: none;
+        border: 1px solid grey;
+        padding: 0.5em;
+        border-radius: 10%;
+        background-image: linear-gradient(grey,rgba(0, 128, 0, 0.384));
+        color: var(--text-darkMode-color);
+
+       
+
+    }
+    .lists a:hover{
+        background-image: linear-gradient(rgba(0, 128, 0, 0.384),grey);
+        color:yellow;
+    }
+    .lists:hover{
+        color:green;
+
+    }
+
+  .nextbutton a{
+       text-decoration: none;
+       color: var(--text-darkMode-color);
+       border: 1px solid var(--text-grey);
+       padding: 1em;
+       border-radius: 1em;
+       
+
+   }
