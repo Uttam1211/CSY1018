@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box !important;
+    scroll-behavior: smooth;
 }
 :root{
     --bg-color: #374094a9;
@@ -9,16 +10,16 @@
     --text-darkMode-color: white;
     --text-grey: grey;
 
-
+/* for index.html file */
 }
 body.home{
-    min-height: 100vh;
+font-family: 'Open Sans', sans-serif;
     background-image: url('img.jpg');
+    background-blend-mode: darken;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text-darkMode-color) ;
-    
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:"header"
@@ -27,12 +28,6 @@ body.home{
                         "footer";
 }
 
-
-    
-    
-
-
-    
 .home header{
  grid-area: header;
  display: flex;
@@ -40,8 +35,7 @@ body.home{
  text-align: center;
  padding: 1em;
  margin: 1px;
- /* box-shadow: 1px 1px 7px grey; */
-
+background: linear-gradient(rgb(0, 0, 0), rgba(99, 36, 36, 0.349));
 }
 .home footer{
     grid-area: footer;
@@ -91,13 +85,43 @@ body.home{
     text-shadow: 2px 2px 10px rgb(241, 7, 190);
     text-transform: uppercase;
 }
+footer em:hover::after{
+    content: ')';
+    cursor: pointer;
+    animation: shake 1s alternate infinite;
+}
+footer em:hover::before{
+    content: '(';
+    cursor: pointer;
+    animation: shake 1s alternate infinite;
+}
+footer em:hover{
+    cursor: pointer;
+    animation: shake 1s alternate infinite;
+}
 
-
+@keyframes shake{
+    0%{
+        color: #FF033E;
+        transform: scale(1.5,1.5) rotate(10deg);
+    }
+    25%{
+        color: #ff033e4d;
+        transform: scale(1.5,1.5) rotate(-10deg);
+    }
+    50%{
+        color:#ff033e57;
+        transform: scale(1.5,1.5) rotate(10deg);
+    }
+    100%{
+        color: #FF033E;
+        transform: scale(1,1) rotate(-10deg);
+    }
 }
 .home nav{
     grid-area: nav;
     padding: 1em;
-    box-shadow: 1px 1px 10px 10px grey; 
+    box-shadow: 1px 1px 10px 10px rgb(44, 40, 40); 
 }
 .navlist{
 display: flex;
@@ -111,7 +135,7 @@ text-decoration: none;
 }
 .lists a{
     text-decoration: none;
-    border: 1px solid grey;
+    border: 1px solid rgba(0, 128, 0, 0.397);
     padding: 0.9em;
     border-radius: 10%;
     background: linear-gradient(rgba(133, 81, 201, 0.363),rgba(0, 128, 0, 0.384));
@@ -146,8 +170,8 @@ text-decoration: none;
     height: auto;
     margin: 1.5em;
     border-radius: 2em;
-    box-shadow: 10px 10px 90px 90px rgb(101, 43, 134) ;
-    font-size: large;
+    box-shadow: 8px 7px 10px rgb(25, 122, 106) ;
+    font-size: medium;
     text-indent: 30px;
     letter-spacing: 3px;
     line-height: 2;
@@ -156,12 +180,9 @@ text-decoration: none;
 
 }
  article:hover{
-    box-shadow: 8px 7px 10px rgb(25, 122, 106) ;
-}
+    box-shadow: 10px 10px 90px 90px rgb(101, 43, 134) ;
 
-    
-       
-    
+}
 
   .nextbutton a{
        text-decoration: none;
