@@ -1,0 +1,24 @@
+@media screen and (max-width:769px) {
+.links{
+    display: none;
+
+}
+.icon img{
+    display: block;
+    float: right;
+    filter: invert(0.9);
+    position: relative;
+}
+
+main{
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+}
+main .indexAside{
+    grid-column: 1;
+    grid-row: 1;
+}
+main .article{
+    grid-column: 2;
+    grid-row: 1;
+}
