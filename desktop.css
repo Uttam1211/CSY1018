@@ -1,53 +1,58 @@
-.icon{ display: none;
+.icon {
+    display: none;
 }
 
 
-.navlist{
-display: flex;
-justify-content: space-around;
-list-style: none;
-border:5px solid rgb(29, 167, 91);
-border-top:0px ;
-border-bottom: 0px;
-padding: 0.5em;
-text-decoration: none;
+.navlist {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: 5px solid rgb(29, 167, 91);
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 0.5em;
+    text-decoration: none;
 }
-.lists a{
+
+.lists a {
     text-decoration: none;
     border: 1px solid rgba(0, 128, 0, 0.397);
     padding: 0.9em;
     border-radius: 10%;
-    background: linear-gradient(rgba(133, 81, 201, 0.363),rgba(0, 128, 0, 0.384));
+    background: linear-gradient(rgba(133, 81, 201, 0.363), rgba(0, 128, 0, 0.384));
     color: var(--text-darkMode-color);
-   transition: .1s step-end;
+    transition: .1s step-end;
 
 }
-.lists a:hover{
-    background: linear-gradient(rgba(0, 128, 0, 0.384),rgba(133, 81, 201, 0.363));
-    color:greenyellow;
+
+.lists a:hover {
+    background: linear-gradient(rgba(0, 128, 0, 0.384), rgba(133, 81, 201, 0.363));
+    color: greenyellow;
     cursor: pointer;
     box-shadow: -3px -4px 10px green;
     transition: .3s ease;
-   
+
 }
-.lists:hover{
-    color:green;}
 
-    main .indexAside img{
-        margin-top: 10px;
-        max-width: 900px;
-        width: 100%;
-        height: auto;
-    }
+.lists:hover {
+    color: green;
+}
 
-    footer em:hover::after{
-        content: ')';
-        cursor: pointer;
-        animation: shake 1s alternate infinite;
-    }
-    footer em:hover::before{
-        content: '(';
-        cursor: pointer;
-        animation: shake 1s alternate infinite;
-    }
+main .indexAside img {
+    margin-top: 10px;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+}
 
+footer em:hover::after {
+    content: ')';
+    cursor: pointer;
+    animation: shake 1s alternate infinite;
+}
+
+footer em:hover::before {
+    content: '(';
+    cursor: pointer;
+    animation: shake 1s alternate infinite;
+}
