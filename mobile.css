@@ -1,12 +1,16 @@
+
+
 .navlist {
-    display: inline-block;
+    display: none;
     width: 50%;
     text-decoration: none;
     list-style-type: none;
     position: relative;
     text-align: left;
-    left: 10%;
+    left: 30%;
+    top: 10%;
     margin: 1em;
+    scroll-behavior: smooth;
 }
 
 .lists a {
@@ -62,3 +66,47 @@ footer em:hover::before {
     cursor: pointer;
     animation: shake 1s alternate infinite;
 }
+.hamicon{
+    height: 0.8em;
+    width: 1.5em; 
+    display: block;  
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+
+}
+.hamicon::before{
+    content: '';  
+    position: absolute;  
+    width: 1.5em;
+    margin-top: 0.1em;
+    border-top: 0.2em solid #fff;
+}
+ nav .hamicon {
+    position: relative;
+}
+.closeicon {
+    display: none;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-shadow: 2px 1px;
+    font-size: 1.5em;
+}
+.hamicon:hover{
+    transform: scale(1.2);
+}
+nav .closeicon {
+    position: relative;
+    bottom: 80%;
+}
+#show:target .navlist{
+    display: inline-block;
+}
+#show:target .hamicon{
+    display: none;
+}
+#show:target .closeicon{
+    display: block;
+}
+

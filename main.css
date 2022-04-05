@@ -36,7 +36,7 @@ body.home {
 }
 
 .home header {
-    max-width: 100vw;
+    min-width: 100vw;
     grid-area: header;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body.home {
 }
 
 .home footer {
-    min-width: 0;
+    min-width: 100vw;
     grid-area: footer;
     border: 1px solid rgb(90, 46, 46);
     color: var(--text-grey);
@@ -127,6 +127,7 @@ footer em:hover {
 }
 
 .home nav {
+    min-width: 100vw;
     grid-area: nav;
     padding: 1em;
     box-shadow: 1px 1px 10px 10px rgb(44, 40, 40);
@@ -144,7 +145,6 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: 60% 40%;
-    overflow: hidden;
 
 
 }
