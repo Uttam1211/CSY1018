@@ -20,7 +20,7 @@ body.home {
     font-size: 1rem;
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('/images/img.jpg');
+    background-image: url('images/img.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
