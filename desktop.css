@@ -1,7 +1,9 @@
 .hamicon,.closeicon{
     display: none;
 }
-
+body,html{
+    min-width: 768px;
+}
 
 .navlist {
     display: flex;
@@ -37,12 +39,18 @@
 .lists:hover {
     color: green;
 }
+main{
+    min-width: 769px;
+    min-height: 0;
+overflow-x: hidden;
+}
+main article{
+    min-width: 0;
+}
 
-main .indexAside img {
-    margin-top: 10px;
-    max-width: 900px;
-    width: 100%;
-    height: auto;
+
+main .indexAside{
+    min-width: 0;
 }
 
 footer em:hover::after {
