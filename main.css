@@ -15,8 +15,7 @@
 
     /* for index.html file */
 }
-
-body.home {
+body{
     min-width: 0;
     font-size: 1rem;
     min-height: 100vh;
@@ -26,14 +25,6 @@ body.home {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text-darkMode-color);
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-areas: "header"
-        "nav"
-        "section"
-        "main"
-        "nextbtn"
-        "footer";
 }
 
 header {
@@ -57,39 +48,42 @@ footer {
     background: linear-gradient(black, rgba(128, 128, 128, 0.466));
 }
 
- footer>p {
+footer>p {
     display: flex;
     justify-content: center;
     color: var(--text-grey);
     filter: drop-shadow(1.5px 1.5px 5px black);
 }
 
- footer ul li a {
+ footer ul li,a{
     text-decoration: none;
     color: var(--text-grey);
+    list-style: none;
 
 }
 
- footer .foot {
-    display: block;
-    width: 50%;
-    float: left;
-    text-align: center;
+ footer .ul1 {
+     display: inline-flex;
+     flex-direction: column;
+    text-align: left;
     text-decoration: none;
     color: var(--text-grey);
 }
 
- footer .foot2 {
-    display: block;
+ footer .ul2 {
+    display: inline-flex;
+    flex-direction: column;
     width: 50%;
     float: right;
     text-decoration: none;
-    text-align: center;
     color: var(--text-grey);
 }
 
  footer ul {
-    padding: 1em;
+     display: flex;
+     justify-content:flex-start;
+     position: relative;
+    padding: 0.5em;
 }
 
  footer ul li a:hover {
@@ -125,20 +119,21 @@ footer {
     }
 }
 
-.nav {
-    grid-area: nav;
+nav {
     padding: 1em;
     box-shadow: 1px 1px 10px 10px rgb(44, 40, 40);
 }
 
-.profileName {
+.home .profileName {
+    display: flex;
+    justify-content: flex-start;
     grid-area: section;
     padding: 1em;
     font-size: x-large;
 
 }
 
-main {
+.home main {
     grid-area: main;
     display: grid;
     grid-template-columns: minmax(0,60%) 40%;
@@ -164,24 +159,24 @@ main {
     word-wrap: break-word;
 }
 
-article:hover {
+ .home article:hover {
     box-shadow: -8px -7px 10px 1px #197a6a50 inset;
     transform:scale(0.95);
 
 }
 
-main .indexAside {
+.home main .indexAside {
     grid-column: 2;
     position: relative;
 }
-main .indexAside img {
+.home main .indexAside img {
     object-fit: cover;
     max-width:100%;
     width: 90%;
     height: auto;
 }
 
-.indexAside img:hover {
+.home .indexAside img:hover {
     transform: scale(0.99);
 
 }
@@ -189,8 +184,8 @@ main .indexAside img {
 .nextbutton a {
     text-decoration: none;
     border: 1px solid grey;
-    padding: 0.3em 0em;
-    border-radius: 10%;
+    padding: 0.3em 0.5em;
+    border-radius: 12%;
     background: linear-gradient(rgba(133, 81, 201, 0.363), rgba(0, 128, 0, 0.384));
     color: var(--text-darkMode-color);
     transition: .1s step-end;
@@ -203,12 +198,11 @@ main .indexAside img {
     cursor: pointer;
     box-shadow: -3px -4px 10px green;
     transition: .3s ease;
+    transform: scale(0.9);
 }
 
 .nextbutton {
-    grid-area: nextbtn;
     display: flex;
-    justify-content: end;
-    margin: 2.5em 3em 0.3em 0em;
-
+    justify-content:end;
+    padding: 1em 2.5em 1em 1em;
 }
