@@ -30,24 +30,26 @@
 
 /* main body grid  */
 main {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0,1fr);
     grid-gap: 3em;
 }
 
 main .indexAside {
     grid-column: 1;
     grid-row: 1;
+    min-width: 0;
 }
 
 main .article {
+    min-width: 0;
     grid-column: 2;
     grid-row: 1;
 }
 
 main .indexAside img {
-    margin: 2em;
-    max-width: 400px;
-    display: block;
+    
+    /* margin: 2em;
+    max-width: 400px; */
     position: relative;
     left: 10%;
 
