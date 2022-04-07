@@ -129,7 +129,7 @@ footer>p {
 }
 
 nav {
-    z-index: 1;
+    z-index: 3;
     position: sticky;
     top: 1px;
     padding: 1em;
@@ -219,3 +219,68 @@ nav {
     justify-content:end;
     padding: 1em 2.5em 1em 1em;
 }
+.twobutton{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0em 0em 1em;
+}
+.contact main{
+    margin: 1.5em;
+    min-width: 0;
+}
+ .contact .mainbackward{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+    position: relative;
+    min-width: 769px;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    
+ }
+
+.contact .forward{
+    backdrop-filter: blur(10px);
+    position: static ;
+ border-radius: 1.9%;
+  padding: 1em;
+  z-index:2;
+  background: linear-gradient(126deg,#243e3b,#17332f,#352843,#214250,#8c5f95);
+  background-size: 300% 300%;
+  animation: block 15s ease infinite;
+}
+
+@keyframes block {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.contact .forward h3{
+    font-size: x-large;
+}
+.contact .backward{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    left:0px;
+    z-index: 1;
+    border-radius: 2%;
+    background: linear-gradient(126deg,#8c5f95,#214250,#352843,#17332f,#243e3b);
+    background-size: 300% 300%;
+    animation: block 10s ease infinite;
+  }
+  
+ 
+
+
+
+
