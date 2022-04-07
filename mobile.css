@@ -1,5 +1,7 @@
-
-
+body{
+    min-height: 100vh;
+    min-width: 478px; 
+}
 .navlist {
     display: none;
     width: 50%;
@@ -97,7 +99,7 @@ footer em:hover::before {
 }
 nav .close-icon {
     position: relative;
-    bottom: 80%;
+    bottom: 180px;
 }
 #show:target .navlist{
     display: inline-block;
