@@ -28,13 +28,22 @@ body{
 }
 
 header {
-    grid-area: header;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content:space-between;
     padding: 1em;
     margin: 0.1em;
-    background: linear-gradient(rgb(0, 0, 0), rgba(99, 36, 36, 0.349));
+    background: linear-gradient(rgb(0, 0, 0), rgba(24, 18, 18, 0.986));
+}
+header h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img{
+    width: 40px;height: 40px;
+    align-self: flex-start;
+    
+    
 }
 
 footer {
@@ -45,7 +54,7 @@ footer {
     border-right: 0px;
     padding: 1.5em;
     margin: 0em 0em;
-    background: linear-gradient(black, rgba(128, 128, 128, 0.466));
+    background: linear-gradient(black, rgba(53, 52, 52, 0.466));
 }
 
 footer>p {
@@ -120,7 +129,11 @@ footer>p {
 }
 
 nav {
+    z-index: 1;
+    position: sticky;
+    top: 1px;
     padding: 1em;
+    background-color: rgb(11, 11, 32);
     box-shadow: 1px 1px 10px 10px rgb(44, 40, 40);
 }
 
