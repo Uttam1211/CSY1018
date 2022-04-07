@@ -12,11 +12,13 @@ body,html{
     border: 5px solid rgb(29, 167, 91);
     border-top: 0px;
     border-bottom: 0px;
-    padding: 0.5em;
+    padding: 0em;
     text-decoration: none;
 }
 
 .lists a {
+    display: block;
+    position: relative;
     text-decoration: none;
     border: 1px solid rgba(0, 128, 0, 0.397);
     padding: 0.9em;
