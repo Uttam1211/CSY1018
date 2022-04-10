@@ -115,20 +115,29 @@ nav .close-icon {
     display: inline-block;
 }
 .contact .forward{
-    max-width: 550px;
-    width: 93vw;
-    min-width: 400px;
-    min-height: 90vh;
+   width: 100%;
+    min-height: 10vh;
     height: 100%;
 }
-.contact .backward{
-    min-width: inherit;
-  max-width: 769px;
-    min-height: 90vh;
-    height: 90%;
-}
-.contact .mainbackward{
-    min-width: 300px;
-    max-width: 750px;
+.contact input[type=text],input[type=tel],input[type=submit]{
+    width: 30em;
+    margin: 0.5em;
+    padding: 0.5em;
     
+}
+.contact input[type=submit]{
+    width: 10em;
+    margin: 3em auto;
+    
+}
+.contact input[type=radio]{
+    width: 3em;
+}
+
+.contact input[type=date]{
+    width: 9em;
+}
+.contact select{
+    display: block;
+    width: 20em;
 }
