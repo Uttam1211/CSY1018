@@ -3,6 +3,29 @@ body{
     min-width: 468px; 
     font-size: 16px;
 }
+.current-text::after{
+    position: relative;
+    left: 40vw;
+    text-align: center;
+    pointer-events: none;
+}
+ .home .current-text::after{
+    content: 'HOME';
+    
+}
+.contact .current-text::after{
+    content: 'Contact';
+}
+.blog .current-text::after{
+    content: 'Blog';
+}
+.portfolio .current-text::after{
+    content: 'Portfolio';
+}
+.site-report .current-text::after{
+    content: 'Site_Report';
+}
+
 .navlist {
     display: none;
     width: 50%;
@@ -97,7 +120,7 @@ footer em:hover::before {
     font-size: 1.5em;
 }
 .hamicon:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 nav .close-icon {
     position: relative;
