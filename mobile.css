@@ -120,7 +120,7 @@ nav .close-icon {
     height: 100%;
 }
 .contact input[type=text],input[type=tel],input[type=submit]{
-    width: 30em;
+    width: 80%;
     margin: 0.5em;
     padding: 0.5em;
     
