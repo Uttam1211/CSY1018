@@ -265,31 +265,37 @@ nav {
     font-size: x-large;
     text-align: center;
     grid-row: 1;
+    text-shadow: 3.5px 1.5px rgba(255, 255, 0, 0.305);
 }
 
 .contact .contact-logo{
     display: grid;
     justify-content:space-around;
-    border-bottom: 2px solid black;
+    border-top: 2px solid black;
     padding: 1em;
+    margin: 1em;
     position: relative;
-    grid-row: 4;
+    grid-row: 3;
     grid-gap: 20px;
 }
-.contact .contact-logo > h3{
-    grid-column: 1;
+.contact .contact-logo h3{
     text-align: center;
+    margin: 1em 0em 0.5em 0em;
+    text-shadow: 4px 4px rgba(210, 226, 167, 0.204);
+
     
 }
-.contact .contact-logo a{
-    grid-row:2;
-    
+.contact .contact-logo {
+    grid-row:3;
+    display: flex;
 }
 .contact .contact-logo a:hover{
     transform: scale(1.1);
 }
 .contact .contact-logo a{
     animation: move 4s ease-in-out infinite;
+    margin: 1em 0em 0.5em 0em;
+
 }
 @keyframes move{
     0%{
@@ -312,22 +318,29 @@ nav {
     animation-delay: 2s;
 }
 .contact .information{
-    grid-row: 3;
-    border-top: 1px solid grey ;
+   
+    /* border-top: 1px solid grey ; */
     margin: 1em;
 }
 .contact .information li{
-    text-decoration: none;
-list-style: none;
+    list-style: none;
+    margin: 0.5em;
+    word-wrap: break-word;
+}
+.contact .information li a{
+    color:#ccd1af;
+
+
 margin: 0.3em auto;
 }
-.contact .form{
-    grid-row: 2;
-    text-align: left;
-    display: grid;
-    grid-template-columns: minmax(0,100%);
-
+.contact .form-main{
+    margin: 2em;
 }
+.contact form{
+   text-align: left;
+    
+}
+
 .contact input[type=text],input[type=tel],input[type=submit]{
     text-shadow: 1px 1px grey;
     box-shadow: 1px 1px 2px 1px grey;
