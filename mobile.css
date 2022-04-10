@@ -119,6 +119,9 @@ nav .close-icon {
     min-height: 10vh;
     height: 100%;
 }
+.contact .information{
+    border-top: 1px solid grey;
+}
 .contact input[type=text],input[type=tel],input[type=submit]{
     width: 80%;
     margin: 0.5em;
@@ -126,18 +129,18 @@ nav .close-icon {
     
 }
 .contact input[type=submit]{
-    width: 10em;
+    width: 20%;
     margin: 3em auto;
     
 }
 .contact input[type=radio]{
-    width: 3em;
+    width: 5%;
 }
 
 .contact input[type=date]{
-    width: 9em;
+    width: 20%;
 }
 .contact select{
     display: block;
-    width: 20em;
+    width: 30%;
 }
