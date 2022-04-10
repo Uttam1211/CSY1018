@@ -47,7 +47,6 @@ header img{
 }
 
 footer {
-    grid-area: footer;
     color: var(--text-grey);
     padding: 1.5em;
     margin: 0em;
@@ -137,14 +136,12 @@ nav {
 .home .profileName {
     display: flex;
     justify-content: flex-start;
-    grid-area: section;
     padding: 1em;
     font-size: x-large;
 
 }
 
 .home main {
-    grid-area: main;
     display: grid;
     grid-template-columns: minmax(0,60%) 40%;
     position: relative;
