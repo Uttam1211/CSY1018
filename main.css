@@ -411,7 +411,7 @@ padding: 0.2em;
     font-size: 10px;
     margin-top: 1em;    
 }
-.portfolio  .forward figure img{
+.portfolio  .forward .top-page figure img{
 display: block;
 border-radius: 50%;
 object-fit: contain;
@@ -422,7 +422,7 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
     /* border: 1px red solid; */
     box-shadow: 0.5px 0.5px 3.5px 1px #00FFFF;
     display: block;
-    width: 40%;
+    width: 80%;
     border-radius: 3px;
     padding: 0.1em;
     margin: 0.5em;
@@ -447,11 +447,28 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
     
    
 }
-.portfolio .progress-bar h3{
+.portfolio h3{
    word-wrap: break-word;
 } 
 .portfolio .progress-bar ul li{
     font-family:'Courier New', Courier, monospace;
     margin: 0.5em;
 
+}
+.portfolio .project-col{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0,50%)) 50%;
+}
+.portfolio .project-col figure a img{
+    width: 70%;
+    max-width: 90%;
+    display: block;
+    position: relative;
+    object-fit: contain;
+    filter: drop-shadow(1px 1px 5px #401e63);
+}
+.portfolio .project-col figure{
+    border: 1px solid grey;
+    padding: 0.3em;
+    margin: 1em;  
 }
