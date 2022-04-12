@@ -137,3 +137,7 @@ margin-right: auto;
     grid-column: 2;   
     margin: 1em; 
 }
+.portfolio .project-col{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0,50%)) 50%;
+}
