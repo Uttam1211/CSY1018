@@ -1,7 +1,7 @@
 body{
     min-height: 100vh;
-    min-width: 468px; 
-    font-size: 16px;
+    /* min-width: 100px;  */
+    font-size: 1rem;
 }
 .current-text::after{
     position: relative;
@@ -136,7 +136,7 @@ nav .close-icon {
 #show:target .close-icon{
     display: inline-block;
 }
-.contact .forward{
+.forward{
    width: 100%;
     min-height: 10vh;
     height: 100%;
@@ -151,7 +151,7 @@ nav .close-icon {
     
 }
 .contact input[type=submit]{
-    width: 20%;
+    width: 25%;
     margin: 3em auto;
     
 }
