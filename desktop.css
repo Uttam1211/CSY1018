@@ -3,7 +3,7 @@
 }
 body,html{
     min-width: 768px;
-    font-size: 1em;
+    font-size: 1rem;
 }
 .links .active{
     border-bottom: 4px solid rgb(28, 128, 0);
@@ -69,12 +69,12 @@ footer em:hover::before {
     cursor: pointer;
     animation: shake 1s alternate infinite;
 } */
-.contact main{
+.mainbackward{
     margin: 2em;
     min-width: 0;
 }
 
-.contact main .forward{
+.contact .forward , .portfolio .forward{
     width: 100%;
     min-height: 10vh;
     height: 100%;
@@ -107,7 +107,7 @@ font-size: 19px;
     
 }
 .contact input[type=radio]{
-    width: 10%;
+    width: 6%;
 }
 
 .contact input[type=date]{
