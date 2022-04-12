@@ -433,7 +433,7 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
     display: block;
     width: 0%;
     position: relative;
-    animation: progress 5s ease-in-out 1s;
+    animation: progress 8s ease-in-out 1s;
 
 }
 .portfolio .html{width: 95%;}
@@ -456,6 +456,7 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
 
 }
 .portfolio .project-col{
+    margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(1, minmax(0,50%)) 50%;
 }
@@ -466,9 +467,30 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
     position: relative;
     object-fit: contain;
     filter: drop-shadow(1px 1px 5px #401e63);
+    border-radius: 4%;
 }
 .portfolio .project-col figure{
     border: 1px solid grey;
     padding: 0.3em;
-    margin: 1em;  
+    margin: 1em; 
+    border-radius: 3%;
+    box-shadow: 0.1px 0.1px 10px #00ff443f;
+}
+.portfolio .project-col figure figcaption{
+    text-align: center;
+    font-size: .7rem;
+    color: wheat;
+}
+.portfolio .forward .qualification li a{
+ margin: 1em 0em 2em 1em;
+    color: #f5deb38b;
+   
+}
+.portfolio .forward .qualification{
+    margin-bottom: 2em;
+}
+.portfolio .forward .qualification li:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px 10px rgb(241, 7, 190);
+    text-transform: uppercase;
 }
