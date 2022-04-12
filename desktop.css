@@ -117,3 +117,23 @@ font-size: 19px;
     display: block;
     width: 40%;
 }
+.portfolio .top-page{
+    display: grid;
+    grid-template-columns: minmax(0,60%) 40%;
+}
+.portfolio  .forward figure img{
+    max-width:60%;
+    width:50%;
+    margin-left: auto;
+margin-right: auto;
+}
+.portfolio .figure{
+    grid-column: 1;
+    grid-row: 1;
+    margin:1em;
+}
+.portfolio .progress-bar{
+    grid-row: 1;
+    grid-column: 2;   
+    margin: 1em; 
+}
