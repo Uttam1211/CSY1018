@@ -20,13 +20,20 @@ body{
     /* font-size: 1rem; */
     min-height: 100vh;
     font-family:'Courier New', Courier, monospace;
-    background-image: url('images/img.jpg');
+    background-image: url('images/img.jpg'), linear-gradient(336deg, #34433f, #1c5191, #308260, #6f34a6); 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text-darkMode-color);
-
+    animation: AnimationName 15s ease infinite;
 }
+
+@keyframes AnimationName {
+    0%{background-position:0% 30%}
+    50%{background-position:30% 20%}
+    100%{background-position:0% 30%}
+}
+
 li{
     list-style: none;
 }
@@ -162,7 +169,9 @@ nav {
     border-radius: 2em;
 
 }
-
+sup{
+    color: red;
+}
 .home article h3 {
     text-align: center;
     width: 90%;
@@ -189,6 +198,7 @@ nav {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(1px 1px 5px rgb(44, 124, 121));
 }
 
 .home .indexAside img:hover {
@@ -225,7 +235,8 @@ nav {
     justify-content: space-between;
     margin: 1em 0em 0em 1em;
 }
-.contact .mainbackward, .portfolio .mainbackward{
+                /* mainbackward */
+.mainbackward{
     margin: 1.5em;
     min-width: 0;
 }
@@ -252,7 +263,7 @@ nav {
 
   box-shadow: 1px 1px 20px 1px rgb(27, 22, 22) inset  ;
 }
-.contact .forward{
+.contact .forward,.blog .forward{
     display: grid;
     grid-template-columns: minmax(0,100%);
 }
@@ -348,32 +359,31 @@ margin: 0.3em auto;
     
 }
 
-.contact input[type=text],input[type=tel],input[type=submit]{
+.contact input[type="text"],input[type="tel"],input[type=submit]{
     text-shadow: 1px 1px grey;
     display: block;
     margin: 0.5em;
-    
+    border-radius: 7px;
     
 }
-.contact input[type=submit]{
+.contact input[type="submit"]{
     text-align: center;
     align-items: center;
     border-radius: 5%;
     background: linear-gradient(rgba(133, 81, 201, 0.363), rgba(0, 128, 0, 0.384));
     color: white;
     border: 1px solid grey ;
-    
-
+    border-radius: 7px;
     
 }
-.contact input[type=submit]:hover{
+.contact input[type="submit"]:hover{
     cursor: pointer;
     background: linear-gradient(rgba(0, 128, 0, 0.384), rgba(133, 81, 201, 0.363));
     box-shadow: -3px -4px 10px green;
     transition: .3s ease;
     transform: scale(0.9);
 }
-.contact input[type=radio]{
+.contact input[type="radio"]{
     text-shadow: 1px 1px grey;
     display: inline-block;
  
@@ -384,24 +394,28 @@ margin: 0.3em auto;
 }
 
 
-.contact input[type=date]{
+.contact input[type="date"]{
     display: block;
     background: #e3e1dd;
     text-shadow: 1px 1px grey;    
-    width: 50%;
+    width: 50%;border-radius: 5px;
 }
 
 .contact select{
     display: inline-block;
     text-shadow: 0.5px 0.5px grey;
     width: 50%;  
+    border-radius: 7px;
 }
-.contact .textarea{
+.contact .textarea, .contact textarea{
     display: block;
-    width: 10%;
+    width: 70%;
+    height: 80px;
 padding: 0.2em;
+border-radius: 7px;
 }
-.portfolio .forward{
+        /* forward */
+.portfolio .forward,.blog .forward{
     display: grid;
     grid-template-columns: minmax(0,100%);
 }
@@ -458,7 +472,7 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
 .portfolio .project-col{
     margin-top: 1em;
     display: grid;
-    grid-template-columns: repeat(1, minmax(0,50%)) 50%;
+    grid-template-columns: repeat(3, minmax(0,100%));
 }
 .portfolio .project-col figure a img{
     width: 70%;
@@ -476,10 +490,14 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
     border-radius: 3%;
     box-shadow: 0.1px 0.1px 10px #00ff443f;
 }
-.portfolio .project-col figure figcaption{
+
+.portfolio .project-col figure figcaption, .blog .blog-content figcaption {
     text-align: center;
-    font-size: .7rem;
+    font-size: .9rem;
     color: wheat;
+    margin:.3em;
+    padding: .7em;
+    word-wrap: break-word;
 }
 .portfolio .forward .qualification li a{
  margin: 1em 0em 2em 1em;
@@ -493,4 +511,46 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
     cursor: pointer;
     text-shadow: 2px 2px 10px rgb(241, 7, 190);
     text-transform: uppercase;
+}
+.blog .blog-content{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,100%));
+
+}
+.blog .forward>h3{
+    font-size: x-large;
+    text-align: center;
+    padding: .3em;
+    border-bottom: 3px solid green;
+width: 13%;
+margin-right: auto;
+margin-left: auto;
+    margin-bottom: 1.5em;
+    text-shadow: 1.5px 1.5px yellowgreen;
+}
+
+
+.blog .blog-content img{
+    width: 70%;
+    max-width: 90%;
+    display: block;
+    position: relative;
+    object-fit: contain;
+    filter: drop-shadow(1px 1px 5px #401e63);
+    border-radius: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog .blog-content figure{
+    border: 1px solid grey;
+    padding: 0.3em;
+    margin: 1em; 
+    border-radius: 3%;
+    box-shadow: 0.1px 0.1px 10px #00ff443f;
+}
+.blog .blog-content figure:hover, .portfolio .forward figure:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: transform .2s ;
+    
 }
