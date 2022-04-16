@@ -6,8 +6,8 @@ body{
 .current-text::after{
     position: relative;
     left: 40vw;
-    text-align: center;
     pointer-events: none;
+    color: #ffffff;
 }
  .home .current-text::after{
     content: 'HOME';
@@ -32,8 +32,8 @@ body{
     text-decoration: none;
     list-style-type: none;
     position: relative;
-    text-align: left;
-    left: 40%;
+    text-align: center;
+    left: 20%;
     top: 17%;
     margin: 1em;
     scroll-behavior: smooth;
@@ -120,8 +120,10 @@ footer em:hover::before {
     color: white;
     text-shadow: 2px 1px;
     font-size: 1.5em;
+    box-shadow: .5px .5px 5px 5px rgb(30, 26, 61);
+    border-radius: 50%;
 }
-.hamicon:hover{
+.hamicon::before:hover{
     transform: scale(1.1);
 }
 nav .close-icon {
@@ -195,4 +197,8 @@ nav .close-icon {
 
 .blog .blog-content{ 
     grid-template-columns: repeat(1, minmax(0,100%));
+}
+.blog .forward>h3{
+    font-size: large;
+    width: 45%;
 }
