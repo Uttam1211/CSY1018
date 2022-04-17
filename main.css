@@ -96,7 +96,10 @@ footer>p {
     text-decoration: none;
     color: var(--text-grey);
 }
-
+footer .ul2 img{
+    width: 16px;
+    height: 16px;
+}
  footer ul {
      display: flex;
      justify-content:flex-start;
@@ -254,7 +257,7 @@ sup{
 
 .forward{
  box-shadow: 1px 1px 12px 5px rgb(27, 22, 22);
- border-radius: 1.9%;
+ border-radius: 15px;
   padding: 1em;
   z-index:5;
   background: linear-gradient(126deg,#284a45,#17332f,#352843,#1d3b48,#8c5f95);
@@ -556,4 +559,23 @@ margin-left: auto;
     transform: scale(1.03);
     transition: transform .2s ;
     
+}
+.site-report .forward{
+    display: grid;
+    grid-template-columns: minmax(0,80%) 1fr;
+    grid-template-areas: "rLeft rRight";
+}
+.site-report .forward .reportLeft{
+    margin: 1em;
+    padding: 0em 1em;
+    grid-area: rLeft;
+    border-left: 2px solid green;
+}
+
+
+.site-report .forward .stickyright{
+   grid-area: rRight;
+   border-left: 3px solid green;
+   
+
 }
