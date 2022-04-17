@@ -202,10 +202,12 @@ nav .close-icon {
     font-size: large;
     width: 45%;
 }
-.site-report .forward .stickyright aside{
-  
-    padding: .8em;
-   position: sticky;
-   top: 52px;
 
+.site-report .forward{
+    display: grid;
+    grid-template-columns: minmax(0,100%);
+    grid-template-areas: "rLeft";
+}
+.site-report .forward .stickyright{
+    display: none;
 }
