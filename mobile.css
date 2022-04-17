@@ -211,3 +211,15 @@ nav .close-icon {
 .site-report .forward .stickyright{
     display: none;
 }
+.site-report .forward .reportLeft .progessreport img{
+    max-width: 200px;
+    width: 250px;
+    height: 10%;
+object-fit: fill;}
+.site-report .forward .reportLeft .validation img{
+    max-width: 155px;
+    width: 150px;
+}
+.site-report .forward {
+    font-size: 13.5px;
+}
