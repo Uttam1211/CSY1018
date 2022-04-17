@@ -44,17 +44,17 @@ body,html{
 .lists:hover {
     color: green;
 }
-main{
+.home main{
     min-width: 769px;
     min-height: 0;
 overflow-x: hidden;
 }
-main article{
+.home main article{
     min-width: 0;
 }
 
 
-main .indexAside{
+.home main .indexAside{
     min-width: 0;
 }
 
@@ -69,12 +69,8 @@ footer em:hover::before {
     cursor: pointer;
     animation: shake 1s alternate infinite;
 } */
-.mainbackward{
-    margin: 2em;
-    min-width: 0;
-}
 
-.contact .forward , .portfolio .forward, .blog .forward{
+.forward {
     width: 100%;
     min-height: 10vh;
     height: 100%;
@@ -144,4 +140,11 @@ font-size: 19px;
     grid-row: 1;
     grid-column: 2;   
     margin: 1em; 
+}
+.site-report .forward .stickyright aside{
+  
+    padding: .8em;
+   position: sticky;
+   top: 85px;
+
 }
