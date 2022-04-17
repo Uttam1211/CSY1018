@@ -9,7 +9,7 @@
     <!--favicon end-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="desktop.css" media=" screen and (min-width:769px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:769px) ">
@@ -48,7 +48,7 @@
             &#10005;
         </a>
     </nav>
-        <section class="mainbackward">
+        <main class="mainbackward">
             <section class="forward">
                 <h3>PING ME 👋</h3>
                
@@ -57,7 +57,7 @@
                     <a href="https://en-gb.facebook.com/" target="_blank"><img src="images/facebook-logo-3232.png" alt="Facebook"></a>
                     <a href="https://github.com/Uttam1211" target="_blank"><img src="images/github3232.png" alt="github"></a>
                     <a  href="https://t.me/Uttam1211" target="_blank"><img src="images/telegram-plane.png" alt="telegram"></a>
-                    <a href="mailto:uttam1thakur@gmail.com?subject=portfolio-Contact us form&body=Hi Uttam,"><img src="images/mail3232.png" alt="email"></a>
+                    <a href="mailto:uttam1thakur@gmail.com?subject=portfolio-Contact_US_Form"><img src="images/mail3232.png" alt="email"></a>
                 </div>
                 <article class="form-main">
                     
@@ -66,23 +66,26 @@
                    <input type="text" name="First-name" class="Fname" placeholder="FIRST NAME *" required>
                     <input type="text" name="Last-name" class="Lname" placeholder="LAST NAME  *" required>
                     <input type="text" name="Email" class="email" placeholder="E-mail  *" required>
-                    <input type="tel" name="phone-number" id="" class="number" placeholder="0743xxxxx" >
-                    <label class="gender"> Gender: <sup>&#42;</sup>
-                        🚹<input type="radio" name="gender" value="male" class="gender" required>
-                        🚺<input type="radio" name="gender" value="female" class="gender" required>
-                    </label>
+                    <input type="tel" name="phone-number" class="number" placeholder="0743xxxxx" >
+                    <div class="gender"> Gender: <sup>&#42;</sup>
+                      <label for="maleM">🚹</label>  <input type="radio" name="Gender" id="maleM"value="male" class="gender" required>
+                     <label for="femaleF">🚺</label> <input type="radio" name="Gender" id="femaleF" value="female" class="gender" required>
+                    </div>
                     <label for="DOB" class="dob">DOB:
-                    <input type="date" name="age" id=""></label>
-                    <label for="country" class="nation">Country:🗺️  <sup>&#42;</sup>
-                        <select name="country" class="country" required>
-                            <option value=" " selected disabled>Select a country</option> <option value="USA">🇺🇸 United States</option>
-                            <option value="UK">🇬🇧 United kingdom</option>
+                    <input type="date" name="age" id="DOB"></label>
+                    <label for="nation" class="nation">Country:🗺️  <sup>&#42;</sup>
+                        <select name="country" class="country" id="nation" required>
+                            <option value="">Not Specified</option>
+                            <option disabled>Select a country</option>
+                             <option value="USA">🇺🇸 United States</option>
+                            <option value="UK" selected>🇬🇧 United kingdom</option>
                             <option value="AUS">🇦🇺 Australia</option>
                             <option value="NP">🇳🇵 Nepal</option>
-                            <option value="DE">🇩🇪 Germany</option>
+                            <option value="RO">🇷🇴 Romania</option>
+                            <option value="DE">🇩🇪 Germany</option> 
                         </select></label>
                         <label for="review" class="textarea">Message:<sup>&#42;</sup>
-                            <textarea name="message" required> </textarea>
+                            <textarea name="message" id="review" required> </textarea>
                         </label>
                         
                         <input type="submit" value="📩 Submit">
@@ -92,9 +95,9 @@
                  <article class="information">
                     <h3>Contact Information</h3>
                     <ul>
-                        <li class="info"><a href="tel:0743660xxx">📲 07436XXXX82</a></li>
+                        <li class="info"><a href="tel:0743660xxx">📲 074366xxx82</a></li>
                         <li class="info"><a href="https://goo.gl/maps/H5SgS6p2M6dppnEz6" target="_blank">🗺️ WaterSide Campus, Northampton </a></li>
-                        <li class="info"><a href="mailto:uttam1thakur@gmail.com?subject=portfolio-Contact us form&body=Hi Uttam,">📧 uttam1thakur@gmail.com</a></li>
+                        <li class="info"><a href="mailto:uttam1thakur@gmail.com?subject=portfolio-Contact_US_Form">📧 uttam1thakur@gmail.com</a></li>
                         <li class="social-Media"><a href="https://en-gb.facebook.com/" target="_blank"><img src="images/facebook-logo-3232.png" alt="facebook"> @Uttam1thakur</a></li>
                         <li class="social-Media"><a href="https://github.com/Uttam1211" target="_blank"><img src="images/github3232.png" alt="github"> @Uttam1211</a></li>
                         <li class="social-Media"><a href="https://t.me/Uttam1211" target="_blank"><img src="images/telegram-plane.png" alt="telegram-plane">@Uttam1211</a></li>
@@ -110,7 +113,7 @@
                  </section>
             
             
-    </section>
+        </main>
     <section class="nextbutton twobutton">
         <a href="blog.html"> <h3> &#8592; Back </h3></a>
         <a href="portfolio.html"> <h3>Next &#8594;</h3></a>
@@ -130,8 +133,8 @@
 <ul class="ul2">
     <li class="foot2"><a href="">📚 Terms and Conditions</a></li>
     <li class="foot2"><a href="">📱 Contact</a></li>
-    <li class="foot2"><a href=""><img src="images/github.png"> Github</a></li>
-    <li class="foot2"><a href=""><img src="images/messenger.png"> Facebook</a></li>
+    <li class="foot2"><a href=""><img src="images/github.png" alt="github"> Github</a></li>
+    <li class="foot2"><a href=""><img src="images/messenger.png" alt="facebook"> Facebook</a></li>
     <li class="foot2"><a href="">📒Projects</a></li>
 </ul>
     </footer>
