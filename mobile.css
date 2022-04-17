@@ -1,7 +1,7 @@
 body{
     min-height: 100vh;
     /* min-width: 100px;  */
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .current-text::after{
     position: relative;
@@ -201,4 +201,11 @@ nav .close-icon {
 .blog .forward>h3{
     font-size: large;
     width: 45%;
+}
+.site-report .forward .stickyright aside{
+  
+    padding: .8em;
+   position: sticky;
+   top: 52px;
+
 }
