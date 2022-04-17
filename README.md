@@ -16,5 +16,7 @@
 <a href="https://github.com/Uttam1211/CSY1018/blob/master/LICENSE" title="LICENSE MIT"><img src="https://camo.githubusercontent.com/089753cb6f4f6a22fc518d5e5116bbc279b856ba2b0d73866a526411b1194bb3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6d61726b746578742f6d61726b746578742e737667" alt="MIT LICENCE"></a>
 # Preview
 <a href="https://t.me/Uttam1211" title="https://uttam1211.github.io/CSY1018/">CLICK ME !!! </a>
-                                         
+# Screenshot
+<p align="left"><b>Home page<b></p>
+<img src="images/website_csy1018.png" width="500px" height="350px">
                                       
