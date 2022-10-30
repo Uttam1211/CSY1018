@@ -459,8 +459,8 @@ filter: drop-shadow(5px 5px 5px rgb(126, 217, 185));
 }
 .portfolio .html{width: 95%;}
 .portfolio .css{width: 85%;}
-.portfolio .java{width: 45%;}
-.portfolio .js{width: 30%;}
+.portfolio .java{width: 75%;}
+.portfolio .js{width: 60%;}
 @keyframes progress{
     0%{
         width: 3%;
